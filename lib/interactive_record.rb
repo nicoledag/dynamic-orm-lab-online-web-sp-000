@@ -58,7 +58,8 @@ end
   end
 
   def self.find_by(row)
-binding.pry
+    sql = "SELECT * FROM #{self.table_name} WHERE row = '#{name}'"
+
   end
 
 end
