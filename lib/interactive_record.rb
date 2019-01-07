@@ -34,9 +34,9 @@ class InteractiveRecord
     binding.pry
   end
 
-  
+
   def saves
-    sql = "INSERT INTO #{table_name_for_insert}"
+    # sql = "INSERT INTO #{table_name_for_insert}"
 
   end
 
