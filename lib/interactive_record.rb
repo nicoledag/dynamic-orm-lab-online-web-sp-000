@@ -22,4 +22,12 @@ class InteractiveRecord
 
     column_names.compact #gets rid of any nil values.
   end
+
+  def initialize(options={})
+    options.each do |property, value|
+      self.send("#{property}=", value)
+    end
+  end
+
+  
 end
