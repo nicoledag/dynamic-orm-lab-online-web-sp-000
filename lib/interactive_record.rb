@@ -58,7 +58,7 @@ end
   end
 
   def self.find_by(row)
-    sql = "SELECT * FROM #{self.table_name} WHERE row = ({row.key[0]} row.values[0])"
+    sql = "SELECT * FROM #{self.table_name} WHERE row = (#{row.key[0]} #{row.values[0]})"
     binding.pry
 
   end
