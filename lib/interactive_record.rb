@@ -60,7 +60,6 @@ end
   def self.find_by(row)
     sql = "SELECT * FROM #{self.table_name} WHERE #{row.keys[0].to_s} = '#{row.values[0].to_s}'"
     DB[:conn].execute(sql)
-    binding.pry
   end
 
 end
